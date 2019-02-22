@@ -4,7 +4,7 @@
  Instructor: Anoop Aroor
  Assignment: Lab 4A
  
- Prints out a rectangle made of stars based on user input
+ Prints out a rectangle made of stars based on user input.
  
  */
 
@@ -13,17 +13,20 @@ using namespace std;
 
 int main() 
 {
+ 
   int height;
   int width;
-  cout << "Enter height: ";
+ 
+  cout << "Enter height: "; //Input
   cin >> height;
   cout << "Enter width: ";
   cin >> width;
-    cout << "\n";
-  for(int i = 0; i<width; i++) //Number of rows
+  cout << "\n";
+ 
+  for(int row = 0; row < width; row++) //Number of rows
     {
-    for(int y = 1; y<=height; y++)
-      { //Number of columns
+    for(int colm = 1; colm <= height; colm++)//Number of columns
+      { 
         cout << "*";
       }
     cout << "\n";
