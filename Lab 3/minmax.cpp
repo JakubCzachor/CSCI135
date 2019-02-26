@@ -2,7 +2,7 @@
  Author: Jakub Czachor
  Course: CSCI-136
  Instructor: Anoop Aroor
- Assignment: Homework 8.1
+ Assignment: Lab 3B
  
 This file gets the min and max values of Current Reservoir Levels.tsv
 
