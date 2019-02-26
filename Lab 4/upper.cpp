@@ -4,7 +4,7 @@
  Instructor: Anoop Aroor
  Assignment: Lab 4E
  
-Prints a triangle with user specified size.
+Prints a reverse triangle with user specified size.
  */
 
 #include <iostream>
