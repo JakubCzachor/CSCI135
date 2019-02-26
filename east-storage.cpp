@@ -1,3 +1,16 @@
+/*
+ Author: Jakub Czachor
+ Course: CSCI-136
+ Instructor: Anoop Aroor
+ Assignment: Lab 3A
+ 
+Prints storage in east basin.
+ 
+ */
+
+
+
+
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -31,9 +44,6 @@ while(fin >> date >> eastSt) {
       cout << "East Basin Storage: " <<  eastSt << " Billion Gallons"; //Checks to make sure the values are equal and when they are, it prints the basin storage that day
       return 0;
     }
-     //skips to the end of line, 
-                          //ignorring the remaining columns 
 
-    // for example, to print the date and East basin storage:
-
-}}
+}
+}
