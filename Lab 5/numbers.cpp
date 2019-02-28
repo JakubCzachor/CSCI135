@@ -8,10 +8,10 @@ The program should also have a main function that tests your code. For example, 
 #include <iostream>
 using namespace std;
 bool isDivisibleBy(int n, int d){
-    if(d == 0)
-     { //Cannot divide by 0
-        return false;
-     }
+  if(d == 0)
+    { //Cannot divide by 0
+      return false;
+    }
   else if (n % d == 0) //If N is divisbile by D it is true
     {
       return true;
