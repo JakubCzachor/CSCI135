@@ -1,48 +1,68 @@
-/*
-Author: Jakub Czachor
-Assignment: Lab 5A
-Instructor: Anoop Aroor
 
-The program should also have a main function that tests your code. For example, it can ask the user to input two integer numbers and print Yes if the first number is divisible by the second, otherwise print No.
-*/
+
+/*
+ Author: Jakub Czachor
+ Assignment: Lab 5C
+ Instructor: Anoop Aroor
+ Prints the next prime number
+ */
+
 #include <iostream>
 using namespace std;
-bool isDivisibleBy(int n, int d){
-  if(d == 0)
-    { //Cannot divide by 0
-      return false;
-    }
-  else if (n % d == 0) //If N is divisbile by D it is true
+
+
+bool isPrime(int num1)
+{
+    
+    if(num1 > 1)
     {
-      return true;
+        
+        for(int num2 = 2; num2 < num1-1; num2++) //Loops through to find a prime
+        {
+            
+            if(num1 % num2 == 0)
+            {
+                
+                return false;
+                break;
+                
+            }
+        }
+        
+        return true;
+        
     }
-  else
+    
+    else
     {
-      return false; //If it is not divisible by D, it is false
+        
+        return false;
+        
     }
 }
-int main() 
+
+int nextPrime(int num1)
 {
-
-  int num0;
-  int num1;
-
-  cout << "Enter an integer: ";
-  cin >> num0;
-  cout << "Enter a second integer: ";
-  cin >> num1;
-
-  while(num1 != 0) //Cannot divide by 0.
+    
+    num1+= 1;
+    
+    while(!isPrime(num1)) //While isPrime is not a prime
     {
-      bool x = isDivisibleBy(num0, num1);
-
-      if (x == true)
-        {
-          cout << "Yes";
-        }
-      else if (x == false)
-        {
-          cout << "No";
-        }
+        
+        num1++; //Increments num1
+        
     }
+    
+    return num1; //When isPrime has found a prime
+    
+}
+int main(){
+    int num0;
+    
+    cout << "Enter a number: ";
+    cin >> num0;
+    
+    int num1 = nextPrime(num0);
+    
+    cout << "Next prime is: " << num1;
 }
