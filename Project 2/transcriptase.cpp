@@ -3,7 +3,7 @@
  Author: Jakub Czachor
  Course: CSCI-136
  Instructor: Anoop Aroor
- Assignment: Project 21
+ Assignment: Project 2A
  This program takes a strings of DNA from file dna.txt and prints the RNA complements for them.
  */
 
